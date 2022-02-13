@@ -28,3 +28,17 @@ document.getElementById('calc-body').addEventListener('click',function(e){
     displayPin.value = newDisplayPin;
   }
 })
+
+function verify(){
+  const pin = document.getElementById('pin-num-input').value;
+  const display = document.getElementById('display-pin').value;
+  const fail = document.getElementById('notify-fail');
+  const success = document.getElementById('notify-success');
+  if(pin == display){
+    success.style.display = 'block';
+    fail.style.display = 'none';
+  }else{
+    success.style.display = 'none';
+    fail.style.display = 'block';
+  }
+}
