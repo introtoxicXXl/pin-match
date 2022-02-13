@@ -6,8 +6,7 @@ function getPin(){
   const pinString = pin + '';
   if(pinString.length == 4){
     return pin;
-  }else{
-    console.log('got' , pin)
+  }else{ 
     return getPin();
   }
 }
